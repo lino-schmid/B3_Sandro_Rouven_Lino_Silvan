@@ -1,7 +1,7 @@
 /* CSS Code, den es für die Start Page braucht */
 .home-bild {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     opacity: 0.3;
     pointer-events: none;
@@ -10,6 +10,20 @@
 .top-products {
     padding: 5vh 0;
     display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
-.product {}
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-picture {
+    height: auto;
+    width: 100%;
+}
+
+.top-title {
+    align: center;
+}
