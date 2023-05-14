@@ -1,31 +1,79 @@
 /* CSS Code, der für alle Web Pages gleich ist */
 * {
   box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .webpage {
   display: flex;
   flex-direction: column;
-  /* min-height: bewirkt, dass der Footer zuunterst ist. */
   min-height: 100vh;
-  /* padding, margin: 0: bewirkt, dass es mit 100vh zuunterist */
   padding: 0;
   margin: 0;
+}
+
+.footer {
+  height: 20vh;
+  background-color: #009595;
+  width: 100%;
+}
+
+footer {
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.footer-sections {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-text {
+  padding: 10px 0;
+  color: white;
+}
+
+.footer-link:hover {
+  opacity: 0.8;
+}
+
+.footer-button {
+  width: 50%;
+  padding: 5px;
+  border: none;
+  border-radius: 7px;
+  color:#009595;
+  font-weight: bold;
+}
+
+.footer-button:hover {
+  opacity: 0.8;
 }
 
 .header {
   background-color: transparent;
   height: 100vh;
   max-width: 100vw;
-}
-
-.content {
-  flex-grow: 1;
-  background-color: #ffb38a;
-}
-
-.footer {
-  background-color: #ff9248;
-  height: 50px;
 }
 
 .logo-picture {
@@ -47,7 +95,16 @@ nav {
   justify-content: space-around;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  color: #009595;
+}
+
 .container {
-  width: 100vw;
+  width: 100%;
   padding: 0 10%;
 }

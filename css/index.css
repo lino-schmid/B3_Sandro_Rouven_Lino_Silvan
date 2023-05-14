@@ -8,7 +8,7 @@
 }
 
 .top-products {
-    padding: 5vh 0;
+    padding: 10vh 0;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -17,13 +17,25 @@
 .product {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.product-title {
+    font-size: 15px;
 }
 
 .product-picture {
-    height: auto;
-    width: 100%;
+    width: 90%;
 }
 
 .top-title {
-    align: center;
+    font-size: 300%;
+}
+
+.top-section {
+    padding-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
