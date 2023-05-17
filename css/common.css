@@ -32,15 +32,16 @@ button:hover {
 }
 
 .footer {
-  height: 20vh;
+  min-height: 20vh;
   background-color: #009595;
   width: 100%;
 }
 
 footer {
-  height: 20vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
 }
 
@@ -148,8 +149,16 @@ https://www.youtube.com/watch?v=flItyHiDm7E
     flex-direction: column-reverse;
   }
 
+  .footer-button-link {
+    width: 80%;
+  }
+
   .footer-sections {
     align-items: center;
+  }
+
+  .footer-text {
+    text-align: center;
   }
 
   .footer-button {
