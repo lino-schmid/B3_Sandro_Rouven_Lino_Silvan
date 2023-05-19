@@ -75,12 +75,6 @@ footer {
   opacity: 0.8;
 }
 
-.home-header {
-  background-color: transparent;
-  height: 100vh;
-  max-width: 100vw;
-}
-
 .header {
   background-color: transparent;
   max-width: 100vw;
@@ -98,7 +92,7 @@ nav {
   padding: 2% 0;
 }
 
-.nav-items {
+#nav-items {
   display: flex;
   align-items: center;
   width: 40%;
@@ -107,8 +101,8 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  color: black;
-  transition: 0.5s ease;
+  color: white;
+  transition: 0.3s ease;
 }
 
 .nav-link:hover {
@@ -117,6 +111,17 @@ nav {
 
 .nav-link:active {
   color: #009595;
+}
+
+.newsletter-link {
+  background-color: rgb(245, 68, 68);
+  padding: 8% 30%;
+  border-radius: 15px;
+  color: white;
+}
+
+.newsletter-link:hover {
+  color: black;
 }
 
 .container {
@@ -129,7 +134,7 @@ Tutorial für die Hambugernavigation (Code nachgebaut nicht kopiert):
 https://www.youtube.com/watch?v=flItyHiDm7E
 */
 
-.hamburger {
+#hamburger {
   display: none;
   cursor: pointer;
 }
@@ -141,7 +146,7 @@ https://www.youtube.com/watch?v=flItyHiDm7E
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: black;
+  background-color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -155,6 +160,7 @@ https://www.youtube.com/watch?v=flItyHiDm7E
 
   .footer-sections {
     align-items: center;
+    padding: 3% 0;
   }
 
   .footer-text {
@@ -165,50 +171,75 @@ https://www.youtube.com/watch?v=flItyHiDm7E
     width: 100%;
   }
 
-  .hamburger {
+  #hamburger {
     margin-top: 10px;
     display: block;
   }
 
-  .hamburger.active .bar:nth-child(2) {
+  #hamburger.active .hamburger-line:nth-child(2) {
     opacity: 0;
   }
 
-  .hamburger.active .hamburger-line:nth-child(1) {
+  #hamburger.active .hamburger-line:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
 
-  .hamburger.active .hamburger-line:nth-child(3) {
+  #hamburger.active .hamburger-line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .nav-items {
+  #hamburger.active .logo {
+    display: none;
+  }
+
+  #hamburger.active .hamburger-line {
+    background-color: black;
+  }
+
+  #body.active {
+    overflow: hidden;
+  }
+
+  #nav-items {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 0;
     gap: 0;
     flex-direction: column;
-    background-color: black;
+    justify-content: center;
+    background-color: white;
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    height: 100vh;
   }
 
-  .nav-items.active{
-    left: 131px;
+  #nav-items.active{
+    left: 0;
+  }
+
+  .newsletter-link {
+    padding: 0;
+    background-color: transparent;
+    color: black;
+  }
+
+  .nav-item {
+    font-size: 40px;
+    padding: 8% 0;
   }
 
   .nav-link {
     margin: 16px 0;
+    color: black;
   }
 
   nav {
-    flex-direction: column;
     align-items: center;
     transition: 0.3s ease;
   }
 
-  .hamburger.active nav {
+  #hamburger.active nav {
     background-color: black;
   }
 }
