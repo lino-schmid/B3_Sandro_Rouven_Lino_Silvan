@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -101,8 +105,12 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: black;
   transition: 0.3s ease;
+}
+
+.white {
+  color: white;
 }
 
 .nav-link:hover {

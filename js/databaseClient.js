@@ -8,8 +8,8 @@ Es reicht, wenn Sie wissen wie benutzen => siehe Demo https://jsfiddle.net/r_hat
 const databaseClient = {
   data: {
     url: "https://ict-290.herokuapp.com/sql",
-    group: "teacher", // ändern Sie die Gruppe
-    pw: "02bd77f9", // ändern Sie das Passwort
+    group: "b8", // ändern Sie die Gruppe
+    pw: "228f03a3", // ändern Sie das Passwort
   },
 
   executeSqlQuery: async (sql) => {
