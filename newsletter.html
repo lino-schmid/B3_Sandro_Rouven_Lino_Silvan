@@ -41,14 +41,19 @@
             <div id="formContainer">
                 <form>
                     <div class="inline">
-                        <input type="text" id="firstname" class="form-input" placeholder="Vorname">
-                        <p id="firstname-error" class="form-error"></p>
-                        <input type="text" id="lastname" class="form-input" placeholder="Nachname">
-                        <p id="lastname-error" class="form-error"></p>
+                        <div class="input-n-error">
+                            <input type="text" id="firstname" class="form-input" placeholder="Vorname">
+                            <p id="firstname-error" class="form-error"></p>
+                        </div>
+                        <div class="input-n-error">
+                            <input type="text" id="lastname" class="form-input" placeholder="Nachname">
+                            <p id="lastname-error" class="form-error"></p>
+                        </div>
                     </div>
                     <div class="inline">
-                        <input type="text" id="email" class="form-input" placeholder="Email">
-                        <p id="email-error" class="form-error"></p>
+                        <div class="email-input-error">
+                            <input type="text" id="email" class="form-input" placeholder="Email">
+                        </div>
                     </div>
                     <input type="submit" id="submit" value="Jetzt anmelden">
                 </form>

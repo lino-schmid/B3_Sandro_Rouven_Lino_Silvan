@@ -31,15 +31,15 @@ submitButton.addEventListener("click", async (event) => {
 // (3) Interaktionen Code
 const onChangeFirstnameField = () => {
     // falls man etwas während der Eingabe prüfen möchte
-}
+};
 
 const onChangeLastnameField = () => {
     // falls man etwas während der Eingabe prüfen möchte
-}
+};
 
 const onChangeEmailField = () => {
     // falls man etwas während der Eingabe prüfen möchte
-}
+};
 
 const onChangeField = () => {
   if (firstnameField.value === "" || lastnameField.value === "" || emailField.value === "") {
@@ -48,6 +48,7 @@ const onChangeField = () => {
     submitButton.disabled = false;
   }
 };
+
 const onClickSubmit = async () => {
     let validForm = false;
 
@@ -66,14 +67,16 @@ const onClickSubmit = async () => {
         lastnameError. innerHTML = "";
         validForm = true;
     }
+
+    /*var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     
-    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailField))) {
+    if (emailField.value.match(validRegex)) {
+        emailError.innerHTML = "";
+        validForm = true;
+    } else {
         validForm = false;
         emailError.innerHTML = "Bitte geben Sie eine gültige Email Adresse an.";
-    } else {
-        emailError. innerHTML = "";
-        validForm = true;
-    }
+    }*/
     
     if (validForm) {
         // Daten aus dem Formular für die Datenbank bereitstellen
