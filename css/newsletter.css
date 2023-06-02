@@ -68,3 +68,8 @@ form {
 #submit:enabled {
     background-color: rgb(243, 66, 66);
 }
+
+
+.hidden {
+    visibility: hidden;
+}

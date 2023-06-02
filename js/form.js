@@ -68,7 +68,7 @@ const onClickSubmit = async () => {
         validForm = true;
     }
 
-    /*var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     
     if (emailField.value.match(validRegex)) {
         emailError.innerHTML = "";
@@ -76,7 +76,7 @@ const onClickSubmit = async () => {
     } else {
         validForm = false;
         emailError.innerHTML = "Bitte geben Sie eine gültige Email Adresse an.";
-    }*/
+    }
     
     if (validForm) {
         // Daten aus dem Formular für die Datenbank bereitstellen

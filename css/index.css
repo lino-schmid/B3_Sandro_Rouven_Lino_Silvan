@@ -1,16 +1,9 @@
-/* CSS Code, den es für die Start Page braucht */
-/*.home-bild {
-    position: absolute;
-    max-width: 100%;
-    height: 100vh;
-    opacity: 1;
-    pointer-events: none;
-    z-index: -1;
-}*/
-
 .home-header {
-    background-image: url("../images/hintergrund.png");
-    background-size: cover;
+    background-image: url("../images/Hintergrund\ \(2\).png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
     height: 100vh;
     max-width: 100vw;
   }

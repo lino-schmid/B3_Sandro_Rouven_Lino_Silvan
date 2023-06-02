@@ -7,7 +7,7 @@
     <link rel="icon" href="./images/logo.png" type="image/x-icon"/>
     <title>LISC Game</title>
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/promotion.css">
 </head>
 <body class="webpage" id="body">
     <div class="content">
@@ -15,7 +15,9 @@
             <div class="container">
                 <nav>
                     <div class="logo">
-                        <img src="images/logo.png" alt="LISC Logo" class="logo-picture">
+                        <a href="./index.html">
+                            <img src="images/logo.png" alt="LISC Logo" class="logo-picture">
+                        </a>
                     </div>
                     <div id="nav-items">
                         <div class="nav-item">
@@ -34,6 +36,36 @@
                         <span class="hamburger-line"></span>
                     </div>
                 </nav>
+            </div>
+        </div>
+        <div id="game-container" class="">
+
+            <div class="game-info">
+                Klicke, um zu springen.<br />
+                Weiche den Steinen aus.<br />
+                Erreiche 100 Punkte, um einen Preis zu gewinnen.
+            </div>
+    
+            <div id="game">
+                <div id="game-start">
+                    <div class="startScreenText">
+                        Klicke, um das Spiel zu starten.
+                    </div>
+                </div>
+                <div id="game-background"></div>
+                <div id="game-dino"></div>
+                <div id="game-rock"></div>
+                <div id="game-score">0</div>
+            </div>
+    
+            <div id="game-end" class="hidden">
+                <div id="game-winner" class="hidden">
+                    ⭐ ⭐ ⭐ Glückwunsch ⭐ ⭐ ⭐ <br />
+                    Du hast mehr als 100 Punkte erzielt.
+                    Wir benachrichtigen dich über deinen Gewinn via Email.
+                </div>
+                Das Spiel ist zu Ende.<br />
+                Klicke auf das Spiel, um erneut zu spielen.
             </div>
         </div>
     </div>
@@ -62,5 +94,6 @@
     </div>
     <script type="text/javascript" src="./js/script.js"></script>
     <script type="text/javascript" src="./js/databaseClient.js"></script>
+    <script type="text/javascript" src="./js/game.js"></script>
 </body>
 </html>
