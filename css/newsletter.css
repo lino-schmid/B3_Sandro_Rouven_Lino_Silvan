@@ -20,7 +20,7 @@ form {
     width: 100%;
     padding: 1% 0;
     border: none;
-    border-bottom: 1px solid #009595;
+    border-bottom: 1px solid black;
     margin: 20px 0;
 }
 
@@ -58,8 +58,9 @@ form {
 }
 
 #submit {
+    margin-top: 10px;
     border: none;
-    background-color: rgb(255, 118, 118);
+    background-color: rgb(53, 52, 35);
     border-radius: 8px;
     padding: 2%;
     color: white;
@@ -72,4 +73,40 @@ form {
 
 .hidden {
     visibility: hidden;
+}
+
+#thankYouContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.thanks-title {
+    width: 50%;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid red;
+    font-weight: bold;
+    font-size: large;
+}
+
+@media screen and (max-width: 768px) {
+    .inline {
+        flex-direction: column;
+    }
+    .input-n-error:first-of-type {
+        margin-right: 0;
+    }
+    
+    .input-n-error:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    .input-n-error {
+        width: 100%;
+    }
 }
