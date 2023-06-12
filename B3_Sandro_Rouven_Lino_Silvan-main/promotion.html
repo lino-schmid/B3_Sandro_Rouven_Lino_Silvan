@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/logo-webseite_black.pngg" type="image/x-icon"/>
+    <title>LISC Game</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/promotion.css">
+</head>
+<body class="webpage" id="body">
+    <div class="content">
+        <div class="header">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="images/logo-webseite_black.png" alt="LISC Logo" class="logo-picture">
+                        </a>
+                    </div>
+                    <div id="nav-items">
+                        <div class="nav-item">
+                            <a href="./index.html" class="nav-link"> Home </a>
+                        </div>
+                        <div class="nav-item" >
+                            <a href="#" class="nav-link active"> Game </a>
+                        </div>
+                        <div class="nav-item" >
+                            <a href="./newsletter.html" class="nav-link newsletter-link"> Newsletter </a>
+                        </div>
+                    </div>
+                    <div id="hamburger">
+                        <span class="hamburger-line black"></span>
+                        <span class="hamburger-line black"></span>
+                        <span class="hamburger-line black"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="game-container" class="">
+
+            <div class="game-info">
+                <div class="game-title">
+                    Weiche den ungesunden Pommes aus, um deine <span id="gains-animation">Gains</span> zu sichern!
+                </div>
+                <div class="game-line">
+                    Drücke die Leertaste um zu springen.
+                </div>
+                <div class="game-line">
+                    Erreiche 100 Punkte, um dein altes Ich stolz zu machen!
+                </div> 
+            </div>
+    
+            <div id="game">
+                <div id="game-start">
+                    <div class="startScreenText">
+                        Klicke, um das Spiel zu starten.
+                    </div>
+                </div>
+                <div id="game-background"></div>
+                <div id="game-dino"></div>
+                <div id="game-rock"></div>
+                <div id="game-score">0</div>
+            </div>
+    
+            <div id="game-end" class="hidden">
+                <div id="game-winner" class="hidden">
+                    <div class="game-title">
+                        Du hast es geschafft! Du kannst stolz sein. <br />
+                    </div>
+                    <div class="game-line">
+                        Du hast mehr als 100 Punkte erzielt.
+                    </div>
+                </div>
+                <div class="game-line">
+                    Das Spiel ist zu Ende.<br />
+                </div>
+                <div class="game-line">
+                    Klicke auf das Spiel, um erneut zu spielen.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <footer>
+                <div class="footer-sections">
+                    <p class="footer-text">
+                        <a href="./pdf/LISC DATENSCHUTZRICHTLINIE UND COOKIE.pdf" class="footer-link" target=”_blank”>Datenschutzerklärung</a>
+                    </p>
+                    <p class="footer-text">
+                        <a href="./pdf/LISC IMPRESSUM.pdf" class="footer-link" target=”_blank”>Impressum</a>
+                    </p>
+                </div>
+                <div class="footer-sections">
+                    <p class="footer-text">
+                        Dies ist eine Webseite der Schule BBZW Sursee und wurde im Rahmen des Moduls 291 erstellt. Sie wird in keiner Weise komerziell verwendet, sondern dient nur als Schulprojekt.
+                    </p>
+                </div>
+                <div class="footer-sections">
+                    <p class="footer-text">Möchtest du unseren Newsletter erhalten?</p>
+                    <a href="./newsletter.html" class="footer-button-link">
+                        <button class="footer-button">
+                            Melde dich hier an!
+                        </button>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/databaseClient.js"></script>
+    <script type="text/javascript" src="./js/game.js"></script>
+</body>
+</html>

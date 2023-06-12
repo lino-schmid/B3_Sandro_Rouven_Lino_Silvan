@@ -1,0 +1,64 @@
+.home-header {
+    background-image: url("../images/Hintergrund.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 100vh;
+    max-width: 100vw;
+  }
+
+.top-products {
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.product-title {
+    font-size: 15px;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-picture {
+    width: 50%;
+}
+
+.top-title {
+    font-size: 300%;
+}
+
+.top-section {
+    padding-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px){
+    .top-products {
+        flex-direction: column;
+        padding: 0 0 10vh 0;
+    }
+
+    .product {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-title {
+        font-size: 200%;
+    }
+}
