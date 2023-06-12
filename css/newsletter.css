@@ -94,6 +94,10 @@ form {
     font-size: large;
 }
 
+.newsletter-title {
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .inline {
         flex-direction: column;

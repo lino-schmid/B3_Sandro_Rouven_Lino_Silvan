@@ -1,5 +1,5 @@
 .home-header {
-    background-image: url("../images/Hintergrund\ \(2\).png");
+    background-image: url("../images/Hintergrund.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,11 +24,14 @@
 
 .product-title {
     font-size: 15px;
+    font-weight: bold;
     width: 90%;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .product-picture {
-    width: 90%;
+    width: 50%;
 }
 
 .top-title {
