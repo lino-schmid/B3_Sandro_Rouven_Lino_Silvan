@@ -70,6 +70,10 @@ form {
     background-color: rgb(243, 66, 66);
 }
 
+#submit:enabled:hover {
+    cursor: pointer;
+}
+
 
 .hidden {
     visibility: hidden;
